@@ -1,24 +1,46 @@
-body {
-    font-family: helvetica, sans-serif;
-    width: 350px;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Rocketseat</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 
-label {
-    font-weight: bold;  
-}
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1 class="titulo">JavaScript Rocketseat</h1>
+			</div>
+		</header>
+		<main>
+				<h2>Módulo 1</h2>
+				<label for="filtrar-paciente">Digite o seu endereço:</label>
 
-div {
-    padding-bottom: 20px;
-}
+				<form id="form-endereco">
+					<div class="grupo">
+						<label for="rua">Rua:</label>
+						<input id="rua" name="rua" type="text" placeholder="Digite o nome da rua" class="campo">
+					</div>
+					<div class="grupo">
+						<label for="numero">Número:</label>
+						<input id="numero" name="numero" type="text" placeholder="Digite o número da casa" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="bairro">Bairro:</label>
+						<input id="bairro" name="bairro" type="text" placeholder="Digite o bairro" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="cidade">Cidade:</label>
+						<input id="cidade" type="text" placeholder="Digite a cidade" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="uf">UF:</label>
+						<input id="uf" type="text" placeholder="Digite o estado" class="campo campo-medio">
+					</div>
+			
+					<button id="gera-endereco" class="botao-endereco">Endereço Completo</button>
+				</form>
+		</main>
 
-input[type="text"] {
-    padding: 5px;
-    width: 150px;
-}
-
-p {
-    background: #FFC125;
-    color: #5E2612;
-    padding: 10px;
-    visibility: hidden;
-}
+	</body>
+</html>
